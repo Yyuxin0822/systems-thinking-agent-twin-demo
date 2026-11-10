@@ -1,10 +1,8 @@
 # Systems Thinking Agent Twin Demo
 
-(Early Research Demo) Turn a text brief into integrated environmental systems digital twins using an input–output, stock–flow metabolism model.
+From a Brief to Twin: How Environmental Metabolism Guides Environmental Twin System Generation
 
-## From a Brief to Twin: How Environmental Metabolism Guides Environmental Twin System Generation
-
-Urban metabolism, rooted in Abel Wolman's [*The Metabolism of Cities* (1965)](https://doi.org/10.1038/scientificamerican0965-178), describes cities through resource inputs, transformations, stocks, and outputs. These concepts give an AI agent a vocabulary for reasoning about how environmental systems work together.
+Environmental metabolism, rooted in Abel Wolman's [*The Metabolism of Cities* (1965)](https://doi.org/10.1038/scientificamerican0965-178), describes cities through resource inputs, transformations, stocks, and outputs. These concepts give an AI agent a vocabulary for reasoning about how environmental systems work together.
 
 The framework uses this vocabulary for **knowledge-guided twin generation** ([Ding, 2024](https://kilthub.cmu.edu/articles/thesis/Generative_AI_for_Critical_Digital_Twins/25892518)): from a design brief, the agent identifies infrastructure and resource exchanges, checks them against physical balances and design requirements, and maps them into a twin. Assets become entities, stored resources become properties, and transfers become connections—making the proposed system's logic and assumptions available to inspect and refine.
 
