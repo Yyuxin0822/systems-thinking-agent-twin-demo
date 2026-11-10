@@ -1,0 +1,117 @@
+[
+  {
+    "@id": "dtmi:environmental:Twin;3",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Twin",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "name",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "stock",
+        "schema": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "quantityName",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quantity",
+            "schema": {
+              "@type": "Object",
+              "fields": [
+                {
+                  "name": "value",
+                  "schema": "double"
+                },
+                {
+                  "name": "unit",
+                  "schema": "string"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "system",
+        "schema": "string"
+      },
+      {
+        "@type": "Relationship",
+        "name": "contains",
+        "target": "dtmi:environmental:Twin;3"
+      },
+      {
+        "@type": "Relationship",
+        "name": "flowsTo",
+        "target": "dtmi:environmental:Twin;3",
+        "properties": [
+          {
+            "@type": "Property",
+            "name": "name",
+            "schema": "string"
+          },
+          {
+            "@type": "Property",
+            "name": "flow",
+            "schema": {
+              "@type": "Map",
+              "mapKey": {
+                "name": "quantityName",
+                "schema": "string"
+              },
+              "mapValue": {
+                "name": "quantity",
+                "schema": {
+                  "@type": "Object",
+                  "fields": [
+                    {
+                      "name": "value",
+                      "schema": "double"
+                    },
+                    {
+                      "name": "unit",
+                      "schema": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "@type": "Property",
+            "name": "system",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "dtmi:environmental:InputTwin;3",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "InputTwin",
+    "extends": "dtmi:environmental:Twin;3"
+  },
+  {
+    "@id": "dtmi:environmental:ProcessTwin;3",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "ProcessTwin",
+    "extends": "dtmi:environmental:Twin;3"
+  },
+  {
+    "@id": "dtmi:environmental:OutputTwin;3",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "OutputTwin",
+    "extends": "dtmi:environmental:Twin;3"
+  }
+]

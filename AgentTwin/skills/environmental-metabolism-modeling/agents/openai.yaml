@@ -1,0 +1,15 @@
+interface:
+  display_name: Environmental Metabolism Modeling
+  short_description: Generate and check environmental infrastructure models
+  default_prompt: Use $environmental-metabolism-modeling to turn my environmental
+    infrastructure brief into an inspectable metabolism model with calculations and
+    Azure Digital Twins exports.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
